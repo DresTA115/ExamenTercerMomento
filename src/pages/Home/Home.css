@@ -1,4 +1,4 @@
-.home-page {
+.pagina-inicio {
   min-height: 100vh;
   background: linear-gradient(135deg, #080a0d 0%, #0f172a 100%);
   color: #f1f5f9;
@@ -6,13 +6,12 @@
   flex-direction: column;
 }
 
-/* Header */
-.home-header {
+.encabezado-inicio {
   padding: 1.5rem 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.header-container {
+.contenedor-encabezado {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -27,17 +26,16 @@
   margin: 0;
 }
 
-.nav-buttons {
+.botones-nav {
   display: flex;
   gap: 1rem;
 }
 
-.nav-buttons a {
+.botones-nav a {
   text-decoration: none;
 }
 
-/* Main Content */
-.home-main {
+.principal-inicio {
   flex: 1;
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -45,14 +43,13 @@
   width: 100%;
 }
 
-/* Hero Section */
-.hero-section {
+.seccion-hero {
   text-align: center;
   margin-bottom: 6rem;
   padding: 2rem 0;
 }
 
-.hero-title {
+.titulo-hero {
   font-size: 3rem;
   font-weight: 700;
   color: #f1f5f9;
@@ -60,7 +57,7 @@
   line-height: 1.2;
 }
 
-.hero-description {
+.descripcion-hero {
   font-size: 1.125rem;
   color: #cbd5e1;
   max-width: 600px;
@@ -68,19 +65,18 @@
   line-height: 1.6;
 }
 
-/* Features Section */
-.features-section {
+.seccion-caracteristicas {
   text-align: center;
 }
 
-.features-title {
+.titulo-caracteristicas {
   font-size: 2rem;
   font-weight: 700;
   color: #f1f5f9;
   margin-bottom: 1rem;
 }
 
-.features-subtitle {
+.subtitulo-caracteristicas {
   font-size: 1rem;
   color: #94a3b8;
   max-width: 700px;
@@ -88,14 +84,14 @@
   line-height: 1.6;
 }
 
-.features-grid {
+.rejilla-caracteristicas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.feature-card {
+.tarjeta-caracteristica {
   background: rgba(30, 41, 59, 0.5);
   border: 1px solid rgba(71, 85, 105, 0.3);
   border-radius: 12px;
@@ -103,34 +99,33 @@
   transition: all 0.3s ease;
 }
 
-.feature-card:hover {
+.tarjeta-caracteristica:hover {
   background: rgba(8, 10, 14, 0.7);
   border-color: rgba(71, 85, 105, 0.5);
   transform: translateY(-4px);
 }
 
-.feature-card-title {
+.titulo-tarjeta {
   font-size: 1.25rem;
   font-weight: 600;
   color: #f1f5f9;
   margin-bottom: 1rem;
 }
 
-.feature-card-description {
+.descripcion-tarjeta {
   font-size: 0.95rem;
   color: #94a3b8;
   line-height: 1.6;
 }
 
-/* Footer */
-.home-footer {
+.pie-inicio {
   background: rgba(8, 11, 21, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem;
   text-align: center;
 }
 
-.footer-links {
+.enlaces-pie {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -138,56 +133,55 @@
   flex-wrap: wrap;
 }
 
-.footer-link {
+.enlace-pie {
   color: #94a3b8;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s;
 }
 
-.footer-link:hover {
+.enlace-pie:hover {
   color: #cbd5e1;
 }
 
-.footer-copyright {
+.copyright-pie {
   color: #64748b;
   font-size: 0.875rem;
   margin: 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .home-header {
+  .encabezado-inicio {
     padding: 1rem;
   }
 
-  .header-container {
+  .contenedor-encabezado {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .home-main {
+  .principal-inicio {
     padding: 3rem 1.5rem;
   }
 
-  .hero-title {
+  .titulo-hero {
     font-size: 2rem;
   }
 
-  .hero-description {
+  .descripcion-hero {
     font-size: 1rem;
   }
 
-  .features-title {
+  .titulo-caracteristicas {
     font-size: 1.75rem;
   }
 
-  .features-grid {
+  .rejilla-caracteristicas {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
-  .footer-links {
+  .enlaces-pie {
     flex-direction: column;
     gap: 0.75rem;
   }

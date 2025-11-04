@@ -29,7 +29,6 @@
 
 .tarjeta-ingreso {
   background: rgba(30, 41, 59, 0.8);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(252, 253, 255, 0.3);
   border-radius: 16px;
   padding: 3rem 2.5rem;

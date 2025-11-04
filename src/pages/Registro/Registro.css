@@ -1,4 +1,4 @@
-.registro-container {
+.contenedor-registro {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,25 +9,25 @@
   gap: 2rem;
 }
 
-.registro-title {
+.titulo-registro {
   text-align: center;
 }
 
-.registro-title h1 {
+.titulo-registro-texto {
   font-size: 2rem;
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 0.5rem;
 }
 
-.registro-subtitle {
+.subtitulo-registro {
   color: #6b7280;
   text-align: center;
   font-size: 0.95rem;
   margin: 0;
 }
 
-.registro-card {
+.tarjeta-registro {
   background: white;
   border-radius: 16px;
   padding: 3rem 2.5rem;
@@ -36,26 +36,26 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
-.registro-form {
+.formulario-registro {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.registro-container .form-group {
+.grupo-formulario {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.registro-container .form-label {
+.etiqueta-formulario {
   color: #374151;
   font-size: 0.9rem;
   font-weight: 600;
   margin-left: 0;
 }
 
-.registro-container .form-input {
+.entrada-formulario {
   background: #f9fafb;
   border: 1.5px solid #e5e7eb;
   border-radius: 8px;
@@ -66,61 +66,60 @@
   outline: none;
 }
 
-.registro-container .form-input::placeholder {
+.entrada-formulario::placeholder {
   color: #9ca3af;
 }
 
-.registro-container .form-input:focus {
+.entrada-formulario:focus {
   border-color: #3b82f6;
   background: white;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
-.registro-container .form-input:hover {
+.entrada-formulario:hover {
   border-color: #d1d5db;
 }
 
-.registro-form .botton {
+.formulario-registro .botton {
   width: 100%;
   margin-top: 0.75rem;
   font-size: 1rem;
   padding: 0.875rem;
 }
 
-.login-link {
+.enlace-inicio-sesion {
   text-align: center;
   color: #6b7280;
   font-size: 0.9rem;
   margin-top: 1.5rem;
 }
 
-.registro-container .link-highlight {
+.enlace-destacado {
   color: #3b82f6;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
 
-.registro-container .link-highlight:hover {
+.enlace-destacado:hover {
   color: #2563eb;
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 480px) {
-  .registro-container {
+  .contenedor-registro {
     gap: 1.5rem;
   }
 
-  .registro-card {
+  .tarjeta-registro {
     padding: 2rem 1.5rem;
   }
 
-  .registro-title h1 {
+  .titulo-registro-texto {
     font-size: 1.75rem;
   }
 
-  .registro-form {
+  .formulario-registro {
     gap: 1rem;
   }
 }

@@ -25,26 +25,26 @@ const Registro = () => {
             return;
         }
         console.log('Registro:', formData);
-        // Aquí iría la lógica de registro
     };
 
     return (
-        <main className="registro-container">
-            <section className='registro-title'>
-                <h1 className="registro-title">Crea tu Cuenta</h1>
-                <p className="registro-subtitle">Regístrate para empezar a usar la aplicación.</p>
+        <main className="contenedor-registro">
+            <section className="titulo-registro">
+                <h1 className="titulo-registro-texto">Crea tu Cuenta</h1>
+                <p className="subtitulo-registro">Regístrate para empezar a usar la aplicación.</p>
             </section>
-            <section className="registro-card">
-                <form onSubmit={handleSubmit} className="registro-form">
-                    <div className="form-group">
-                        <label htmlFor="nombre" className="form-label">
+
+            <section className="tarjeta-registro">
+                <form onSubmit={handleSubmit} className="formulario-registro">
+                    <div className="grupo-formulario">
+                        <label htmlFor="nombre" className="etiqueta-formulario">
                             Nombre
                         </label>
                         <input
                             type="text"
                             id="nombre"
                             name="nombre"
-                            className="form-input"
+                            className="entrada-formulario"
                             placeholder="Ingresa tu nombre"
                             value={formData.nombre}
                             onChange={handleChange}
@@ -52,15 +52,15 @@ const Registro = () => {
                         />
                     </div>
 
-                    <div className="form-group">
-                        <label htmlFor="email" className="form-label">
+                    <div className="grupo-formulario">
+                        <label htmlFor="email" className="etiqueta-formulario">
                             Correo Electrónico
                         </label>
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            className="form-input"
+                            className="entrada-formulario"
                             placeholder="tucorreo@ejemplo.com"
                             value={formData.email}
                             onChange={handleChange}
@@ -68,15 +68,15 @@ const Registro = () => {
                         />
                     </div>
 
-                    <div className="form-group">
-                        <label htmlFor="password" className="form-label">
+                    <div className="grupo-formulario">
+                        <label htmlFor="password" className="etiqueta-formulario">
                             Contraseña
                         </label>
                         <input
                             type="password"
                             id="password"
                             name="password"
-                            className="form-input"
+                            className="entrada-formulario"
                             placeholder="Crea una contraseña segura"
                             value={formData.password}
                             onChange={handleChange}
@@ -84,15 +84,15 @@ const Registro = () => {
                         />
                     </div>
 
-                    <div className="form-group">
-                        <label htmlFor="confirmPassword" className="form-label">
+                    <div className="grupo-formulario">
+                        <label htmlFor="confirmPassword" className="etiqueta-formulario">
                             Confirmar Contraseña
                         </label>
                         <input
                             type="password"
                             id="confirmPassword"
                             name="confirmPassword"
-                            className="form-input"
+                            className="entrada-formulario"
                             placeholder="Vuelve a escribir la contraseña"
                             value={formData.confirmPassword}
                             onChange={handleChange}
@@ -108,9 +108,9 @@ const Registro = () => {
                     />
                 </form>
 
-                <p className="login-link">
+                <p className="enlace-inicio-sesion">
                     ¿Ya tienes una cuenta?{' '}
-                    <Link to="/login" className="link-highlight">
+                    <Link to="/login" className="enlace-destacado">
                         Inicia sesión
                     </Link>
                 </p>
@@ -118,5 +118,6 @@ const Registro = () => {
         </main>
     );
 };
+
 
 export default Registro;

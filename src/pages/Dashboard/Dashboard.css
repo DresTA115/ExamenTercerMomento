@@ -7,13 +7,13 @@ html, body {
 .pagina-tablero {
   display: flex;
   min-height: 100vh;
-  background: #091339;
-  color: #f1f5f9;
+  background: #010e42;
+  color: white;
 }
 
 .barra-tablero {
   width: 240px;
-  background: #2a3c56;
+  background: #3a3b91;
   display: flex;
   flex-direction: column;
   border-right: none;
@@ -29,7 +29,7 @@ html, body {
 .logo-aplicacion {
   width: 40px;
   height: 40px;
-  background: #4e50bf;
+  background: #3a3b91;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ html, body {
 .nombre-aplicacion {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #f1f5f9;
+  color: white;
   margin: 0;
 }
 
@@ -56,20 +56,20 @@ html, body {
 
 .item-navegacion {
   padding: 0.75rem 1.5rem;
-  color: #94a3b8;
+  color: gray;
   text-decoration: none;
   transition: all 0.2s;
   font-size: 0.95rem;
 }
 
 .item-navegacion:hover {
-  background: rgba(99, 102, 241, 0.1);
-  color: #c7d2fe;
+  background: gray;
+  color: #95a0d8;
 }
 
 .item-navegacion.activo {
   background: rgba(62, 64, 155, 0.2);
-  color: #a5b4fc;
+  color: #95a0d8;
   border-left: 3px solid #6366f1;
 }
 
@@ -81,7 +81,7 @@ html, body {
   width: 100%;
   padding: 0.75rem;
   background: transparent;
-  color: #94a3b8;
+  color: gray;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -91,7 +91,7 @@ html, body {
 
 .boton-salir:hover {
   background: rgba(239, 68, 68, 0.1);
-  color: #fca5a5;
+  color: #ffc8c8;
 }
 
 .principal-tablero {
@@ -102,7 +102,7 @@ html, body {
 
 .encabezado-tablero {
   padding: 1.5rem 2rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +111,7 @@ html, body {
 .texto-bienvenida {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #f1f5f9;
+  color: white;
   margin: 0;
 }
 
@@ -141,12 +141,12 @@ html, body {
 .titulo-seccion {
   font-size: 2rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: white;
   margin-bottom: 0.5rem;
 }
 
 .subtitulo-seccion {
-  color: #94a3b8;
+  color: gray;
   font-size: 0.95rem;
   margin-bottom: 2rem;
 }
@@ -163,17 +163,17 @@ html, body {
   border-radius: 12px;
   padding: 1.75rem 1.5rem;
   transition: all 0.3s ease;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid gray;
 }
 
 .tarjeta-estadistica:hover {
-  background: #3d4f66;
+  background: gray;
   transform: translateY(-2px);
 }
 
 .titulo-estadistica {
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: white;
   margin-bottom: 0.75rem;
   font-weight: 500;
 }
@@ -181,7 +181,7 @@ html, body {
 .valor-estadistica {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color:white;
   margin: 0;
 }
 
@@ -193,10 +193,10 @@ html, body {
 
 .seccion-notificaciones,
 .seccion-acciones {
-  background: #2a3c56;
+  background: #1b2738;
   border-radius: 12px;
   padding: 2rem;
-  border: solid 2px rgba(255, 255, 255, 0.1);
+  border: solid 2px gray;
 }
 
 .titulo-columna {
