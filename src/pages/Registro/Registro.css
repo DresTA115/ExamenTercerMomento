@@ -1,0 +1,126 @@
+.registro-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.registro-title {
+  text-align: center;
+}
+
+.registro-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.registro-subtitle {
+  color: #6b7280;
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.registro-card {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.registro-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.registro-container .form-label {
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.registro-container .form-input {
+  background: #f9fafb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  color: #1f2937;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.registro-container .form-input::placeholder {
+  color: #9ca3af;
+}
+
+.registro-container .form-input:focus {
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.registro-container .form-input:hover {
+  border-color: #d1d5db;
+}
+
+.registro-form .botton {
+  width: 100%;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  padding: 0.875rem;
+}
+
+.login-link {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.registro-container .link-highlight {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.registro-container .link-highlight:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .registro-container {
+    gap: 1.5rem;
+  }
+
+  .registro-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .registro-title h1 {
+    font-size: 1.75rem;
+  }
+
+  .registro-form {
+    gap: 1rem;
+  }
+}
