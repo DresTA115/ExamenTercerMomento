@@ -1,0 +1,144 @@
+.contenedor-ingreso {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #021128;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.titulo-ingreso {
+  text-align: center;
+}
+
+.encabezado-ingreso {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo-ingreso {
+  color: #94a3b8;
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.tarjeta-ingreso {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 253, 255, 0.3);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.formulario-ingreso {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contenedor-ingreso .grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contenedor-ingreso .etiqueta-formulario {
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.fila-etiqueta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enlace-recuperar {
+  color: #3b82f6;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.enlace-recuperar:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+.contenedor-ingreso .campo-formulario {
+  background: transparent !important;
+  border: 2px solid rgba(71, 85, 105, 0.5);
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  color: #f1f5f9;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.contenedor-ingreso .campo-formulario::placeholder {
+  color: #64748b;
+}
+
+.contenedor-ingreso .campo-formulario:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.contenedor-ingreso .campo-formulario:hover {
+  border-color: rgba(71, 85, 105, 0.8);
+}
+
+.formulario-ingreso .botton {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  padding: 0.875rem;
+}
+
+.enlace-registro {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.contenedor-ingreso .resaltar-enlace {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contenedor-ingreso .resaltar-enlace:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+.seccion-registro {
+  margin-top: 0px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contenedor-ingreso {
+    gap: 1.5rem;
+  }
+
+  .tarjeta-ingreso {
+    padding: 2rem 1.5rem;
+  }
+
+  .encabezado-ingreso {
+    font-size: 1.75rem;
+  }
+}

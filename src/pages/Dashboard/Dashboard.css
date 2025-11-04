@@ -1,0 +1,205 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.pagina-tablero {
+  display: flex;
+  min-height: 100vh;
+  background: #091339;
+  color: #f1f5f9;
+}
+
+.barra-tablero {
+  width: 240px;
+  background: #2a3c56;
+  display: flex;
+  flex-direction: column;
+  border-right: none;
+}
+
+.encabezado-barra {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-aplicacion {
+  width: 40px;
+  height: 40px;
+  background: #4e50bf;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.nombre-aplicacion {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+.navegacion-barra {
+  flex: 1;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-navegacion {
+  padding: 0.75rem 1.5rem;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.item-navegacion:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: #c7d2fe;
+}
+
+.item-navegacion.activo {
+  background: rgba(62, 64, 155, 0.2);
+  color: #a5b4fc;
+  border-left: 3px solid #6366f1;
+}
+
+.pie-barra {
+  padding: 1.5rem;
+}
+
+.boton-salir {
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  color: #94a3b8;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.boton-salir:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #fca5a5;
+}
+
+.principal-tablero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado-tablero {
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texto-bienvenida {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+.avatar-usuario {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-usuario img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenido-tablero {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.seccion-panel {
+  margin-bottom: 2rem;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo-seccion {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.rejilla-estadisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tarjeta-estadistica {
+  background: #2a3c56;
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.tarjeta-estadistica:hover {
+  background: #3d4f66;
+  transform: translateY(-2px);
+}
+
+.titulo-estadistica {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.valor-estadistica {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0;
+}
+
+.columnas-tablero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.seccion-notificaciones,
+.seccion-acciones {
+  background: #2a3c56;
+  border-radius: 12px;
+  padding: 2rem;
+  border: solid 2px rgba(255, 255, 255, 0.1);
+}
+
+.titulo-columna {
+  font-size: 1.25rem;
+  font-weight: 600
+}
